@@ -17,7 +17,7 @@ jobs:
         go-version: '^1.14'
     - name: Build
       run: |
-        go get ./... && go build ./...
+        go build ./...
     - name: Download ShiftLeft CLI
       run: |
         curl https://cdn.shiftleft.io/download/sl > ${GITHUB_WORKSPACE}/sl && chmod a+rx ${GITHUB_WORKSPACE}/sl
